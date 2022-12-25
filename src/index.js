@@ -2,7 +2,7 @@ export default function orderByProps(obj, arr) {
   const firstArr = [];
   const secondArr = [];
   let firstObj = {};
-  for (const key of Object.keys(obj)) {
+  for (const key in obj) {
     const secondObj = { key, value: obj[key] };
     if (arr) {
       arr.forEach((el) => {
